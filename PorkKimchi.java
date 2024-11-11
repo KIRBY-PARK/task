@@ -35,7 +35,7 @@ public class PorkKimchi {
         Iterator<Integer> keys = map.keySet().iterator();
 
         // 주의사항
-        String caution = "\n ⚠\uFE0F 주의 ⚠\uFE0F \n 김치찜 요리는 센불에서 끓이면 맛이 안나기에 중불 ~ 중약불로 푹 끓이는게 Point! (인덕션이라면 4~5단계)";
+        String caution = "⚠\uFE0F 주의 ⚠\uFE0F \n 김치찜 요리는 센불에서 끓이면 맛이 안나기에 중불 ~ 중약불로 푹 끓이는게 Point! (인덕션이라면 4~5단계)";
 
         System.out.println("\uD83D\uDCE3 커비 강력추천!\n" + "[" + foodMenu + "] " + "만들기");
         System.out.println("별점 : " + intStarScore + " (" + percentage + "%)\n");
@@ -44,6 +44,6 @@ public class PorkKimchi {
             String value = map.get(key);
             System.out.println(key + ". " + value);
         }
-        System.out.println(caution);
+        System.out.println("\n" + caution);
     }
 }
