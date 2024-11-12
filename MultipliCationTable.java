@@ -2,7 +2,7 @@ package week02;
 
 import java.util.Scanner;
 
-public class W17 {
+public class MultipliCationTable {
     public static void main(String[] args) {
         // 입력받는 단을 제외하고 출력!
         Scanner sc = new Scanner(System.in);
