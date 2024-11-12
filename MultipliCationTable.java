@@ -7,7 +7,7 @@ public class MultipliCationTable {
         // 입력받는 단을 제외하고 출력!
         Scanner sc = new Scanner(System.in);
         System.out.print("구구단 몇단이 궁금하신가요? (숫자만 입력) : ");
-        int wantNum = sc.nextInt(); // 출력을 제외할 구구단 수 값
+        int wantNum = sc.nextInt(); // 출력할 구구단 수 값
 
         if (wantNum <= 9){
             // 구구단
