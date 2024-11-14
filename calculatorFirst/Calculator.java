@@ -16,7 +16,7 @@ public class Calculator {
 
             // 연산자 입력
             System.out.print("기호를 입력하세요 (+, -, *, /) : ");
-            String operator = scanner.next();
+            char operator = scanner.next().charAt(0);
 
             // 두번째 피연산자 입력
             System.out.print("두 번째 숫자를 입력하세요 : ");
@@ -31,19 +31,19 @@ public class Calculator {
             // 사용자가 입력한 기호에 따른 case(operator) 실행
             switch (operator) {
                 // 덧셈
-                case "+":
+                case '+':
                     result = operandFirst + operandSecond;
                     break;
                 // 뺄셈
-                case "-":
+                case '-':
                     result = operandFirst - operandSecond;
                     break;
                 // 곱셈
-                case "*":
+                case '*':
                     result = operandFirst * operandSecond;
                     break;
                 // 나눗셈
-                case "/":
+                case '/':
                     if (operandSecond != 0) { // 0으로 나눌 수 없음
                         result = operandFirst / operandSecond;
                     } else {
@@ -64,7 +64,7 @@ public class Calculator {
             }
 
             // 결과 값 출력
-            System.out.println("결과는 : " + result);
+            System.out.println("결과 : " + result);
 
             // 종료 및 재실행 여부 확인
             System.out.println("exit를 입력하면 계산을 종료합니다. 다시 계산을 원한다면 아무거나 입력해주세요.");
